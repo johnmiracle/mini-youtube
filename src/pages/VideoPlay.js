@@ -31,12 +31,14 @@ function VideoPlay(props) {
 									className="embed-responsive-item"
 									src={videoSrc}
 									title={video.title}
+									allowFullScreen
 								></iframe>
 							</div>
 							<h6 className="">{video.title}</h6>
 							<span>{video.views}</span>
 							<span className="m-2">&#8226;</span>
 							<span>{video.uploaded_at}</span>
+							<p>{video.description}</p>
 						</>
 					)}
 				</div>
