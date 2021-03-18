@@ -1,38 +1,188 @@
-.App {
+html, body {
+    margin: 0;
+    min-height: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  border: none;
+}
+a:hover{
+  text-decoration: none;
+  color: black;
+}
+.container-box{
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418) ), url('https://hdwallpaper20.com/wp-content/uploads/2017/07/wallpaper-wp4001752.jpg');
+  background-size: cover;
+  background-position: center;
+  font: 0.9rem sans-serif;
+  background: #0a1f44;
+  color: #1e2432;
+  margin: 0;
+}
+
+.logo{
+  max-width: 20%;
+  margin-top: 0;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.search-bar{
+  padding: 15px 56px
+}
+
+.info-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  flex-direction: column;
+  background: #fff;
+  padding: 1rem;
+  width: 40%;
+  margin: auto;
+  border-radius: 1.5rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.info-country{
+  font-size: 13px;
+  margin-left:4px;
+  padding: 3px;
+  color:#fff;
+  font-weight: 600;
+  border-radius: 4px;
+  background-color: green
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.text-center {
+  text-align: center;
+}
+
+.loader{
+  max-width: 100%;
+  height: 50px;
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  margin: -25px 0 0 -25px;
+}
+
+.video-box{
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.video-box ul {
+  list-style: none;
+  padding: 0
+}
+
+.thumbnail{
+  max-width: 100%
+}
+
+.video-duration{
+  position: absolute;
+  bottom: .7rem;
+  right: 1.5rem;
+  background:black;
+  color: #fff;
+  padding: .1rem;
+  border-radius: 1px;
+  font-size: .9rem;
+}
+
+.video-frame{
+  height: 600px;
+  width: 1000px;
+}
+
+.video-grid{
+  width: 450px !important;
+  height: 250px !important;
+}
+
+.video-list {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.video-detail-list{
+  margin-left: 10px;
+}
+
+.videogrid-search-box{
+  width: 50%;
+  margin:auto;
+  margin-top: 10px;
+}
+
+.video-grid-desc{
+  width: 80%
+}
+
+.video-grid-thumbnail{
+  max-width: 100%
+}
+
+.page-footer{
+  background:rgba(0, 0, 0, 0.418)
+}
+
+.page-footer{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+@media only screen and (max-width: 600px) {
+  .search-bar{
+    padding: 15px 30px
+  }
+  .info-box{
+    width: 100%;
+  }
+
+  .thumbnail{
+    max-width: 100%
+  }
+
+  .video-duration{
+    bottom: .7rem;
+    right: 1.2rem;
+  }
+
+  .media-description{
+    display: none;
+  }
+
+  .video-frame{
+    height: 200px;
+    width: 336px;
+  }
+
+  .video-grid{
+    width: 340px !important;
+    height: 200px !important;
+  }
+
+  .video-detail-list{
+    margin-left: 0px;
+  }
+
+
+  .videogrid-search-box{
+    width: 100%;
+
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
