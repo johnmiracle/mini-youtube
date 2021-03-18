@@ -20,6 +20,7 @@ a:hover{
   background: #0a1f44;
   color: #1e2432;
   margin: 0;
+  padding-bottom: 5rem;
 }
 
 .logo{
@@ -115,6 +116,7 @@ a:hover{
 .video-list {
   list-style: none;
   padding-left: 10px;
+  margin-bottom: 5rem
 }
 
 .video-detail-list{
@@ -143,6 +145,7 @@ a:hover{
   position: fixed;
   width: 100%;
   bottom: 0;
+  margin-top: 10rem;
 }
 @media only screen and (max-width: 600px) {
   .search-bar{
